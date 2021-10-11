@@ -8,6 +8,57 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h1>REGISTRATION FORM</h1>
+    <p>INTAN NUR FARHANAH BINTI FADZIL</p>
+    <P>18DDT19F1036</P>
+    <br>
+
+    <form action="/action_page.php">
+        <p>Please fill in the information below.</p>
+        <label for="fname">Name: </label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="Email">Email: </label>
+        <input type="text" id="Email" name="Email"><br><br>
+        <input type="hidden" id="studId" name="studId" value="1036">
+        
+
+        <br>
+
+        <p>Please select your gender:</p>
+        <input type="radio" id="gender1" name="gender">
+        <label for="gender1">FEMALE</label><br>
+        <input type="radio" id="gender2" name="gender">
+        <label for="gender2">MALE</label><br>  
+
+
+        <br>
+
+        <label for="jabatan">Jabatan:</label>
+        <select name="jabatan" id="jabatan">
+            <option value="jtmk">JTMK</option>
+            <option value="jrkv">JRKV</option>
+            <option value="jp">JP</option>
+            <option value="jph">JPH</option>
+
+        </select>
+
+        <br><br>
+
+        <p>Password:</p>
+        <input type="password" id="pw" name="pw" minlength="8">
+        
+        <br><br>
+
+        <label for="uploadfile">Choose file to uplaod:</label>
+        <input type="file" id="uploadfile" name="uploadfile" multiple><br><br>
+
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+
+      </form>
+      
     
 </body>
 </html>
